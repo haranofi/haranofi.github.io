@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<title>Fernando Muñoz Martín - PRA2 Visualización de datos</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="../style.css">
+	
+	<style>
+		/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 700px) {
+	.row {
+	flex-direction: column;
+		}
+	}
+	/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+	@media screen and (max-width: 400px) {
+	.navbar a {
+	float: none;
+	width: 100%;
+		}
+	}
+	</style>
+	<body style="background-color: #f1f1f1;" style="bloque-completo">
+		<div class="header">
+			<h1>Fernando Muñoz Martín</h1>
+			<p>PRA2 Visualización de datos</p>
+		</div>
+		
+		<div id="navbar">
+      	    <a href="../index.html">Home</a>
+    	    <a class="active" href="ejemplos/index.html">Ejemplos</a>
+  	 	</div>
+		<br><br>
+		<div style="bloque-completo">
+			<h3>En este apartado vamos a mostar cómo se puede extraer información valiosa a partir de las gráficas interactivas mostradas con muy pocos ajustes.</h3>
+
+			<p>En la primera de las imágenes se observan varias cosas. Primero, las obras de un sólo artista han copado la mayoría de las adquisiciones del museo. Segundo, las obras de artistas mixtos, mujeres o género desconocido, sufren un boom en 2001. Tan sólo 1964 fue comparable, pero recordemos que este año es el que más adquisiciones hace el museo.</p>
+			<img src="../images/1.1.PNG">
+
+			<p>La segunda es extremadamente simple, mantiene todas las adquisiciones según vía crediticia, lo que nos enseña que un año especialmente prolífico no se debe a ninguna política de adquisición concreta, sino que el museo depende de los grandes donantes para continuar aumentando su colección.</p>
+			<img src="../images/2.1.PNG">
+
+			<p>La siguiente nos muestra una decisión del museo que debe ser consciente. Jugando en este filtro con las nacionalidades, podemos ver que los países occidentales aportan artistas de períodos mucho más antiguos que el resto de países. Claramente esto supone una respuesta a las corrientes decoloniales que se comienzan a dar con la entrada del siglo XXI. <br><br> En esta comparación podemos ver la comparación de una selección de países africanos con respecto a Bélgica (en verde)</p>
+			<img src="../images/3.1.PNG">
+
+			<p>Por último, en nuestra herramienta favorita podemos hacer una búsqueda de artistas mujeres de oriente medio tan sólo haciendo un par de clics. <br><br> En esta primera imagen se ve además la predominancia lógica de Israel entre los artistas del museo.</p>
+			<img src="../images/4.1.PNG">
+			<br>
+			<p>Pero clicando en Turquía, nos encontramos con 5 artistas mujeres que han conseguido exponer en uno de los museo de arte moderno más famosos del mundo.</p>
+			<img src="../images/4.2.PNG">
+			<br><br>
+			<div>
+				<p>Os presentamos la obra de Aslı Çavuşoğlu:</p>
+				<img src="../images/4.3.PNG" style="margin-left: auto; margin-right: auto; display: block; width: 40%">
+			</div>
+
+		</div>
+
+    <script src="../Sticky navbar.js"></script>
+	</body>
+</html>

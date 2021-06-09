@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<title>Fernando Muñoz Martín - PRA2 Visualización de datos</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	
+	<style>
+		/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 700px) {
+	.row {
+	flex-direction: column;
+		}
+	}
+	/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+	@media screen and (max-width: 400px) {
+	.navbar a {
+	float: none;
+	width: 100%;
+		}
+	}
+	</style>
+	<body style="background-color: #f1f1f1;">
+		<div class="header">
+			<h1>Fernando Muñoz Martín</h1>
+			<p>PRA2 Visualización de datos</p>
+		</div>
+		
+		<div id="navbar">
+      	    <a class="active" href="javascript:void(0)">Home</a>
+    	    <a href="ejemplos/index.html">Ejemplos</a>
+  	 	</div>
+		<br><br>
+		<div class="bloque-completo">
+			<h1>Adquisiciones por género y financiación</h1>
+			<p>En las siguientes gráficas podemos observar cómo la política de adquisición del MoMa se ha basado en grandes donaciones que han terminado por configurar sus fondos. <br> <br> Animamos a filtrar los datos según género, individualidad de la pieza adquirida y línea de financiación. <br> Por defecto mostramos marcadas las obras que el museo adquirió con "su propio dinero", es decir, con aquellas donaciones que no se componían de obras, sino de dinero en metálico.</p>
+			<div class='tableauPlaceholder' id='viz1623243321336' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;PR&#47;PRA2-1&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PRA2-1&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;PR&#47;PRA2-1&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1623243321336');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1600px';vizElement.style.height='927px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1600px';vizElement.style.height='927px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		</div>
+		<br><br><br>
+
+		<div class="bloque-completo">
+			<h1>Vida de los artistas</h1>
+			<p>En este caso podemos comparar la vida de los distintos artistas contenidos en la colección según un filtro de nacionalidad. <br> <br> En caso de que varios artistas pasen el filtro de nacionalidad (de haber explicitado uno), estos se irán apilando uno sobre otro. Así es como, de una manera muy sencilla, podemos comprobar que los artistas franceses seleccionados vivieron mucho antes que los españoles y mexicanos, en cambio, las obras contenidas de sudafricanos son de autores mucho más tardíos. <br><br><br> No os sorprendáis si parece que un autor tan sólo vivió un año, en realidad eso significa que sigue vivo. </p>
+			<div class='tableauPlaceholder' id='viz1623245551623' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;PR&#47;PRA2-3&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PRA2-3&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;PR&#47;PRA2-3&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1623245551623');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1169px';vizElement.style.height='527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1169px';vizElement.style.height='527px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		</div>
+		<br><br><br>
+
+		<div class="bloque-completo">
+			<h1>Nacionalidad de los artistas</h1>
+			<p>Las siguientes gráficas nos permiten descubrir nuevos artistas según su nacionalidad. <br> Filtrando por gentilicio (en inglés) o clicando en cualquiera de los cuadros de la izquierda, se pueden conocer los artistas que componen la colección según nacionalidad, además nos permite comparar de manera relativa qué cantidad de obras de cierta nacionalidad tiene la colección. <br><br> Por si no fuera poco, también podemos explícitamente pedirle a la gráfica que nos muestre obras de hombres, mujeres, grupos mixtos o de sexo/género desconocido</p>
+			<p>En nuestra selección se puede observar la predominancia de los artistas mexicanos sobre los cubanos y los argentinos en esta colección.</p>
+			<div class='tableauPlaceholder' id='viz1623245460472' style='position: relative'><noscript><a href='#'><img alt='Dashboard 3 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;PR&#47;PRA2-3&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PRA2-3&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;PR&#47;PRA2-3&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1623245460472');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1600px';vizElement.style.height='927px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1600px';vizElement.style.height='927px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		</div>
+
+    <script src="Sticky navbar.js"></script>
+	</body>
+</html>
